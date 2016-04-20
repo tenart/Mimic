@@ -1,0 +1,591 @@
+body, html {
+    background: #272727;
+    min-width: 1300px;
+    padding-bottom: 50px;
+}
+
+@font-face {
+    font-family: "sanfranthin";
+    src: url(../fonts/SF-UI-Display-Thin.otf);
+}
+
+@font-face {
+    font-family: "sanfranlight";
+    src: url(../fonts/SF-UI-Display-Light.otf);
+}
+
+@font-face {
+    font-family: "sanfranregular";
+    src: url(../fonts/SF-UI-Display-Regular.otf);
+}
+
+@font-face {
+    font-family: "sanfranmedium";
+    src: url(../fonts/SF-UI-Display-Medium.otf);
+}
+
+@font-face {
+    font-family: "sanfranbold";
+    src: url(../fonts/SF-UI-Display-Semibold.otf);
+}
+
+@font-face {
+    font-family: "sanfranslight";
+    src: url(../fonts/SF-UI-Text-Light.otf);
+}
+
+@font-face {
+    font-family: "sanfransmedium";
+    src: url(../fonts/SF-UI-Text-Medium.otf);
+}
+
+@font-face {
+    font-family: "sanfransregular";
+    src: url(../fonts/SF-UI-Text-Regular.otf);
+}
+
+@font-face {
+    font-family: "sanfransbold";
+    src: url(../fonts/SF-UI-Text-Semibold.otf);
+}
+
+h1 {
+    font-family: sanfranslight;
+    font-size: 35px;
+}
+
+p {
+    font-family: sanfranslight;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+body > P {
+    color: white;
+}
+
+p a {
+    font-family: sanfransbold;
+    text-decoration: none;
+}
+
+p img {
+    height: 20px;
+    vertical-align: middle;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 20px 0;
+}
+
+canvas {
+    display: none;
+}
+
+.small {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.hide {
+    display: none;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.blue {
+    color: #007bff;
+}
+
+.right {
+    float: right;
+}
+
+#logo {
+    height: 130px;
+    width: 300px;
+    background: ;
+    display: block;
+    margin: 50px auto;
+}
+
+#wrapper {
+    text-align: center;
+}
+
+#phone_wire, #left, #right {
+    display: inline-block;
+}
+
+.settings {
+    color: white;
+    width: 300px;
+    padding: 0 30px;
+    vertical-align: top;
+    margin-top: 100px;
+}
+
+.settings h1 {
+    text-align: center;
+}
+
+.settings h1 img {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#appearance {
+    text-align: left;
+}
+
+#appearance p {
+    display: inline-block;
+}
+
+.interactives {
+    height: 27px;
+    cursor: pointer;
+}
+
+#signal_wrapper {
+    vertical-align: middle;
+}
+
+.signal_button {
+    height: 14px;
+    width: 14px;
+    border-radius: 100%;
+    margin-top: 6px;
+    box-shadow: inset 0 0 0px 1px white;
+}
+
+#render_icon {
+    background-image: url(../images/Paper%20Plane-100.png);
+    border-radius: 0;
+}
+
+#download_icon {
+    background-image: url(../images/Download-100.png);
+    border-radius: 0;
+}
+
+.button:hover #render_icon {
+    background-image: url(../images/Paper%20Plane%20Filled-100.png);
+}
+
+.button:hover #download_icon {
+    background-image: url(../images/Download%20Filled-100.png);
+}
+
+.filled {
+    background: white;
+}
+
+#provider_name, #clock_time, #battery_val {
+    border: none;
+    background: transparent;
+    text-align: right;
+    font-family: sanfransbold;
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    width: 85px;
+    padding: 0;
+}
+
+.switch {
+    width: 48px;
+    background-size: 80%;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-image: url(../images/Toggle%20Off-100.png);
+}
+
+.on {
+    background-image: url(../images/Toggle%20On%20Filled-100.png);
+}
+
+#right {
+    margin-left: 20px;
+    text-align: left;
+}
+
+#left {
+    margin-right: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    width: 260px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+    background: #007bff;
+    font-family: 'sanfranmedium';
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.inactive {
+    opacity: 0.2;
+    cursor: default;
+}
+
+#render_prev {
+    background: #ffffff;
+    padding: 10px 0;
+    
+}
+
+#to {
+    width: 30px;
+}
+
+#recipient {
+    border: none;
+    background: transparent;
+    text-align: left;
+    padding: 1px 5px;;
+    font-family: sanfransbold;
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    width: 250px;
+}
+
+.round {
+    border-radius: 100%;
+    height: 27px;
+    width: 27px;
+    background: center center no-repeat;
+    background-size: 100%;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+p.v_label {
+    vertical-align: middle;
+}
+
+#add_self:hover, #add_target:hover {
+    background-image: url(../images/Plus%20Filled-100.png);
+}
+
+#add_self {
+    float: right;
+    margin-left: 10px;
+    margin-right: 0;
+    background-image: url(../images/Plus-100.png);
+}
+
+#add_target {
+    background-image: url(../images/Plus-100.png);
+}
+
+#movetoscreen {
+    background-image: url(../images/Paper%20Plane-100.png);
+    border-radius: 0px;
+}
+
+#movetoscreen:hover {
+    background-image: url(../images/Paper%20Plane%20Filled-100.png)
+}
+
+textarea.outtext {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 3px;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    display: block;
+    width: 220px;
+    max-width: 220px;
+    color: white;
+    line-height: 1.2;
+    font-family: 'sanfranregular';
+    resize: none;
+}
+
+#msg_container span.outtext .delete {
+    width: 20px;
+    height: 20px;
+    background: url(../images/Cancel-100.png) center center no-repeat;
+    background-size: 100%;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-bottom: -10px;
+    margin-top: -10px;
+    z-index: 9;
+    position: relative;
+    display: none;
+}
+
+#msg_container span.outtext .delete:hover {
+    background-image: url(../images/Cancel%20Filled-100.png);
+}
+
+#msg_container span.self .delete {
+    margin-left: 50px;
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+
+#msg_container span.target .delete {
+    margin-left: 230px;
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+
+#msg_container span.outtext:hover .delete {
+    display: block;
+}
+
+textarea.self {
+    background: rgba(255, 255, 255, 0.3);
+    margin-left: 60px;
+}
+
+#phone_wire {
+    background: url(../images/wireframe2.png) no-repeat;
+    width: 532px;
+    height: 958px;
+    padding-top: 159px;
+    margin: 0 auto;
+}
+
+#phone_screen {
+    background: rgb(255, 255, 255);
+    height: 799px;
+    width: 450px;
+    margin: 0 auto;
+}
+
+#top_bar {
+    width: 100%;
+    height: 89px;
+    background: white;
+    border-bottom: 1px solid #ececec;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    z-index: 9;
+    position: relative;
+}
+
+#status_bar {
+    width: 100%;
+    height: 29px;
+    color: black;
+    text-align: left;
+}
+
+#status_bar * {
+    display: inline-block;
+}
+
+#status_bar p {
+    vertical-align: top;
+    line-height: 1;
+}
+
+#signal {
+    width: 60px;
+    height: 29px;
+    background-image: url(../images/sig3.png);
+}
+
+#provider {
+    padding-top: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'sanfranslight';
+    margin-right: -5px;
+}
+
+#clock {
+    padding-top: 6px;
+    font-size: 18px;
+    font-family: 'sanfranbold';
+    font-weight: ;
+    width: 100%;
+    text-align: center;
+    height: 24px;
+    margin-top: -32px;
+}
+
+#wifi {
+    height: 29px;
+    width: 34px;
+    background: url(../images/wifi.png) no-repeat;
+}
+
+#nav_bar {
+    width: 450px;
+    text-align: left;
+}
+
+#back {
+    width: 40px;
+    height: 60px;
+    background: url(../images/Back.png);
+    vertical-align: middle;
+    margin-top: -10px;
+}
+
+#back_text {
+    font-size: 24px;
+    font-family: 'sanfranregular';
+    margin-left: -5px;
+    margin-top: 10px;
+}
+
+#to_name {
+    font-size: 24px;
+    font-family: 'sanfranbold';
+    width: 450px;
+    background: ;
+    text-align: center;
+    margin-top: -47px;
+    position: absolute;
+    clear: both;
+}
+
+#details {
+    font-size: 24px;
+    font-family: 'sanfranregular';
+    margin-top: 10px;
+    margin-right: 13px;
+}
+
+#messages_scroll {
+    height: 709px;
+    overflow: hidden;
+    background: white;
+}
+
+#phone_messages {
+    padding: 20px 23px;
+    font-size: 0;
+    z-index: 1;
+    position: relative;
+    border-radius: 5px;
+    background: white;
+    cursor: ns-resize;
+}
+
+#phone_messages:hover {
+    margin: 0 10px;
+    padding: 20px 13px;   
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+#phone_messages .delete {
+    margin: 0;
+}
+
+#phone_messages span {
+    display: block;
+}
+
+#phone_messages span.self {
+    text-align: right;
+}
+
+#phone_messages span.target {
+    text-align: left;
+}
+
+#phone_messages .bubble {
+    padding: 13px 18px;
+    font-size: 24px;
+    font-family: 'sanfranregular';
+    display: inline-block;
+    position: relative;
+    max-width: 260px;
+    text-align: left;
+    line-height: 1.2;
+    border-radius: 30px;
+    min-height: 29px;
+    min-width: 30px;
+    margin-bottom: 2px;
+    z-index: 2;
+    position: relative;
+}
+
+#phone_messages span div.self {
+    background: #007bff;
+    color: white;
+}
+
+#phone_messages span div.target {
+    background: #e5e5ea;
+    color: black;
+}
+
+.last {
+    background: ;
+    margin-bottom: 12px;
+}
+
+#phone_messages span.last #receive_tail, #phone_messages span.last #send_tail {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-top: -14px;
+    z-index: 1;
+    position: relative;
+}
+
+#phone_messages span.last div.self {
+    margin-bottom: -16px;
+}
+
+#phone_messages span.last div.target {
+    margin-bottom: -16px;
+}
+
+#phone_messages span.last #send_tail {
+    background: url(../images/STail.png) no-repeat;
+    margin-right: -8px;
+}
+
+#phone_messages span.last #receive_tail {
+    background: url(../images/RTail.png) no-repeat;
+    margin-left: -8px;
+}
+
+#bottom_bar {
+    width: 450px;
+    height: 62px;
+    background: url(../images/bottombar.png);
+    box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.05);
+    z-index: 9;
+    position: relative;
+}
+
+.normal {
+    margin-top: -62px;
+}
+
+.raised {
+    margin-top: -418px;
+}
+
+#keyboard {
+    background: red;
+    width: 450px;
+    height: 356px;
+    background: url(../images/keyboard.png);
+    z-index: 9;
+    position: relative;
+}
