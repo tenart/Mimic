@@ -82,7 +82,7 @@ $( document ).ready(function() {
         
         $(this).addClass('filled');
         var sigValue = parseInt($(this).attr('sig'),10);
-        var sigImageURL = 'url(../images/sig' + sigValue + '.png)';
+        var sigImageURL = 'url(images/sig' + sigValue + '.png)';
         
         $('#signal').css("background", sigImageURL);
                 
