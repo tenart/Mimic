@@ -118,6 +118,18 @@ $( document ).ready(function() {
         };
     }); 
     
+    $(document).on('blur', '#unread', function() {
+        if ( $(this).val().length > 0 ) {
+            if ( $(this).val() == '0' ) {
+                $('#back_text').text('Back');
+            } else {
+                $('#back_text').text('Back (' + $(this).val() + ')');
+            }
+        } else {
+            $(this).empty().append('&nbsp;');
+        };
+    });
+    
     $('#chat_color_toggle').click(function() {
         
         if ( $(this).attr('class').indexOf('on') >= 0 ) {
