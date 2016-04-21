@@ -134,11 +134,11 @@ $( document ).ready(function() {
         
         if ( $(this).attr('class').indexOf('on') >= 0 ) {
             $('#phone_messages span div.self').css("background","#00d048");
-            $('#phone_messages span.last #send_tail').css("background","url(../images/SMSTail.png) no-repeat");
+            $('#phone_messages span.last #send_tail').css("background","url(images/SMSTail.png) no-repeat");
             $(this).removeClass('on');
         } else if ( $(this).attr('class').indexOf('on') < 0) {
             $('#phone_messages span div.self').css("background","#007bff");
-            $('#phone_messages span.last #send_tail').css("background","url(../images/STail.png) no-repeat");
+            $('#phone_messages span.last #send_tail').css("background","url(images/STail.png) no-repeat");
             $(this).addClass('on');
         };
     });
