@@ -65,7 +65,7 @@ $( document ).ready(function() {
             
             if ( $('#chat_color_toggle').attr('class').indexOf('on') < 0 ) {
                 $('#phone_messages span .self').css("background","#00d048");
-                $('#phone_messages span.last #send_tail').css("background","url(../images/SMSTail.png) no-repeat");
+                $('#phone_messages span.last #send_tail').css("background","url(images/SMSTail.png) no-repeat");
             };
             
         });
